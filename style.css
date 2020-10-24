@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 46px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 32px;
+}
+
+.fa {
+  margin-right: 2px;
+}
+
+/* ホーム */
+main {
+  width: 100%;
+  font-size: 0;
+  /* font-size: 0; でflex, inline-blockの微妙の左右の隙間なくす */
+  padding-top: 30px;
+  padding-bottom: 1000px;
+  /* padding-bottomはテスト用 */
+}
+
+.container {
+  margin: 0 auto;
+  /* padding: 0 15px; */
+  width: 100%;
+  max-width: 800px;
+  font-size: 16px;
+  /* background-color: #f0f0ff; */
+}
+
+article {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.post-img-box {
+  /* position: relative; */
+  /* width: 100%; */
+  height: 100%;
+  max-width: 608px;
+  /* 352px */
+  max-height: 352px;
+  /* 幅縮めると画像が縦長になる */
+  font-size: 0;
+}
+
+/* .post-img::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+} */
+
+.post-img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.post-img:hover {
+  cursor: pointer;
+}
+
+.post-text-top {
+  position: relative;
+  text-align: right;
+  height: 45px;
+}
+
+.border-user-icon {
+  position: absolute;
+  top: -45px;
+  left: 15px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #f0f0ff;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  line-height: 45px;
+  border: 1px solid green;
+  border-radius: 16px;
+}
+
+.post-title {
+  font-size: 20px;
+}
+
+.post-item {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ナビゲーション */
+.sp-footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 2;
+}
+
+.sp-footer-menu {
+  display: inline-flex;
+  max-width: 800px;
+  width: 100%;
+  /* background-color: red; */
+  
+}
+
+.sp-footer-menu-list {
+  width: 25%;
+  padding: 15px;
+}
+
+/* 投稿ページ */
+form {
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: pink;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffff00;
+  border-radius: 5px;
+}
+
+.form-btn:hover {
+  background-color: green;
+}
+
+/* tablet */
+@media screen and (min-width: 641px) {
+  /* max-width設定しないと641px以上だからPCと重複する */
+  main {
+    text-align: center;
+  }
+  main .container{
+    display: inline-flex;
+  }
+
+  article {
+    text-align: left;
+    width: 48%;
+    margin: 0 1%;
+  }
+
+
+}
+
+/* pc */
+@media screen and (min-width: 961px) {
+  body {
+    /* padding-bottom: 0px; */
+  }
+
+  .sp-footer-nav {
+    position: sticky;
+    top: 0;
+    /* border: 1px solid #f0f0ff; */
+  }  
+}

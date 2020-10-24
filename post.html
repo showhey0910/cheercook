@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投稿ページ</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="#">投稿ページ</a></h1>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="post-container">
+        <form action="index.html" method="post">
+          <label for="yourname">お名前</label>
+          <input id="yourname" type="text" name="yourname" placeholder="山田太郎" required>
+          <label for="recipe">料理</label>
+          <input id="recipe" type="text" name="title" placeholder="バターチキンカレー" required>
+          <label for="area1">対応エリア(住所)</label>
+          <input id="area1" type="text" placeholder="福岡市中央区天神" required>
+          <label for="">日時</label>
+          <input type="text" placeholder="2020/09/01/09:00-12:00">
+          <label for="">金額(円)</label>
+          <input type="text" placeholder="1000">
+          <textarea name="content" id="" cols="30" rows="10" placeholder="食材：たまねぎ1玉、キャベツ100g"></textarea>
+          <input class="form-btn" type="submit" name="submit" value="投稿する">
+        </form>
+      </div>
+      
+
+    </div>
+  </main>
+
+  <nav class="sp-footer-nav">
+    <ul class="sp-footer-menu">
+      <li class="sp-footer-menu-list">
+        <a href="index.html" class="sp-footer-menu-btn">ホーム</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="#" class="sp-footer-menu-btn">リスト</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="post.html" class="sp-footer-menu-btn">投稿</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="mypage.html" class="sp-footer-menu-btn">マイページ</a>
+      </li>
+    </ul>  
+  </nav>
+
+  
+</body>
+</html>

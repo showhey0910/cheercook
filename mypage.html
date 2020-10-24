@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マイページ</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="#">マイページ</a></h1>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="post-container">
+        <form action="index.html" method="post">
+          <label for="yourname">お名前</label>
+          <input id="yourname" type="text" name="yourname" placeholder="山田太郎" value="山田太郎" required>
+          <label for="bio">自己紹介</label>
+          <textarea id="bio" name="bio" placeholder="ここに自己紹介を記入"></textarea>
+          <label for="area1">対応エリア(住所)</label>
+          <input id="area1" type="text" placeholder="福岡市中央区天神" value="福岡市中央区天神" required>
+          <label for="url">URL</label>
+          <input id="url" type="url" name="url" placeholder="https://showhey.jp">
+          <input class="form-btn" type="submit" name="submit" value="更新する">
+        </form>
+      </div>
+      
+
+    </div>
+  </main>
+
+  <nav class="sp-footer-nav">
+    <ul class="sp-footer-menu">
+      <li class="sp-footer-menu-list">
+        <a href="index.html" class="sp-footer-menu-btn">ホーム</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="#" class="sp-footer-menu-btn">リスト</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="post.html" class="sp-footer-menu-btn">投稿</a>
+      </li>
+      <li class="sp-footer-menu-list">
+        <a href="mypage.html" class="sp-footer-menu-btn">マイページ</a>
+      </li>
+    </ul>  
+  </nav>
+
+  
+</body>
+</html>
