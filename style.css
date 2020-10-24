@@ -117,6 +117,15 @@ article {
   border-radius: 16px;
 }
 
+.circle-btn:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.circle-btn a:hover {
+  color: #fff;
+}
+
 .post-title {
   font-size: 20px;
 }
@@ -166,7 +175,7 @@ textarea {
   width: 400px;
   margin: 0 auto;
   padding: 15px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 input {
@@ -187,7 +196,7 @@ input {
 }
 
 .form-btn:hover {
-  background-color: green;
+  background-color: orange;
 }
 
 /* tablet */
